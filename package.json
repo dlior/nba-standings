@@ -1,0 +1,28 @@
+{
+  "name": "nba-standings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "nba-standings": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dlior/nba-standings"
+  },
+  "keywords": [],
+  "author": "Lior Degu",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12",
+    "console-table-printer": "^2.12.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
