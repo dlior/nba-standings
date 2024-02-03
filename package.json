@@ -1,11 +1,11 @@
 {
   "name": "nba-standings",
   "version": "1.0.0",
-  "description": "",
+  "description": "Prints NBA standings in the terminal.",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "bin": {
     "nba-standings": "./index.js"
@@ -14,7 +14,10 @@
     "type": "git",
     "url": "https://github.com/dlior/nba-standings"
   },
-  "keywords": [],
+  "keywords": [
+    "NBA",
+    "STANDINGS"
+  ],
   "author": "Lior Degu",
   "license": "ISC",
   "dependencies": {
