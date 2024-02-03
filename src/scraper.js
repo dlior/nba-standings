@@ -1,5 +1,6 @@
-import * as cheerio from 'cheerio';
-import { BASE_URL, NUM_OF_COLUMNS } from '../constants/constants.js';
+import { load } from 'cheerio';
+
+import { BASE_URL, NUM_OF_COLUMNS } from './constants.js';
 import { tablePrinter } from './table-printer.js';
 
 export async function getNBAStandings(season, conference, team) {
@@ -7,7 +8,7 @@ export async function getNBAStandings(season, conference, team) {
 
   const response = await fetch(`${BASE_URL}/${season}`);
   const html = await response.text();
-  const $ = cheerio.load(html);
+  const $ = load(html);
 
   let i = 0;
   $('.Table__Scroller table').each((_, table) => {

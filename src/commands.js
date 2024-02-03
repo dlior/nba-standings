@@ -1,20 +1,16 @@
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
-import { getNBAStandings } from './utils/nba-standings.js';
+
+import { getNBAStandings } from './scraper.js';
 
 yargs(hideBin(process.argv))
-  .command(
-    '*',
-    '',
-    () => {},
-    (argv) => {
-      const { season, conference, team } = argv;
-      getNBAStandings(season, conference, team);
-    }
-  )
+  .command('*', false, {}, (argv) => {
+    const { season, conference, team } = argv;
+    getNBAStandings(season, conference, team);
+  })
   .option('season', {
     alias: 's',
-    describe: 'Specify the season year',
+    describe: 'Specify the NBA season',
     type: 'number',
     default: new Date().getFullYear(),
   })
