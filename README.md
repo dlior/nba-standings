@@ -10,3 +10,5 @@
 ```
 npx nba-standings [-s <season> | -c <conference> | -t <team>]
 ```
+
+[![Screenshot-2024-02-03-at-18-52-28.jpg](https://i.postimg.cc/rpzzGzNj/Screenshot-2024-02-03-at-18-52-28.jpg)](https://postimg.cc/Ff59Nrqk)
